@@ -5,7 +5,7 @@ const Profile = ({ avatar, tag, stats, location, username }) => {
   return (
     <div className={s.profile}>
       <div className={s.description}>
-        <img src={avatar} alt={username} class={s.avatar} />
+        <img src={avatar} alt={username} className={s.avatar} />
         <p className={s.name}>{username}</p>
         <p>@{tag}</p>
         <p>{location}</p>
