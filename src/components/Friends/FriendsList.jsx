@@ -1,5 +1,5 @@
 import Friend from './Friend';
-
+import PropTypes from 'prop-types';
 function Friends({ friends }) {
   return (
     <ul className="friend-list">
@@ -10,4 +10,7 @@ function Friends({ friends }) {
   );
 }
 
+Friends.propTypes = {
+  friends: PropTypes.array.isRequired,
+};
 export default Friends;
